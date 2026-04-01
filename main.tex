@@ -1,0 +1,118 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{enumitem}
+\usepackage{microtype}
+
+\title{Capstone}
+\author{Huxley Lewis}
+\date{November 2025}
+\begin{document}
+
+\maketitle
+\section{Abstract}
+
+\section{Introduction}\
+
+Artificial Intelligence, or AI, has grown significantly over the last decade with the introduction of large language models /citation/. These models are examples of neural networks a collection of algorithms that aim to emulate behaviours by training them rather than programming exact behaviours /citation/. As these models are trained with more data for longer, they are approaching limitations of their tractability and structure /citation/. The exact methods LLMs use to adapt to so many new and untrained problems is yet unknown /citation/, but their structure, of training, prediction, and generation, can be used to construct a method for predicting the behaviours of AI and by extension LLMs. This structure of artificial intelligence enables the use of techniques from computer science, epistemology, determinism, and philosophy of physics, to predict the limitations of generalised AI models.
+
+\medskip
+Constraint Satisfaction Problems, or CSPs, are a method for representing domain specific problems in computer science. CSPs are, in this way, a general method for describing problems, without referencing to the algorithm used to solve them. This lends itself to the study of AI models and their limitations as it enables general conversations about the problems AI models are solving. CSPs can be formalised as a triple of variables, domains, and constraints, as follows:
+\smallskip
+$S$ is a constraint system defined by three components:$X$,$D$,$C$.
+\[
+  S := \langle X, D, C \rangle
+\]
+$X$ is the set of variables $x$ in the CSP.
+\[
+X := \{x_1,\ldots,x_n\}
+\]
+$D$ is a set of domains $d$, which define the set of possible values of each variable in $X$.
+\[
+D := \{d_1,\ldots,d_n\}
+\]
+\[
+d_i = \{v_0,\ldots,v_k\}
+\]
+$C$ is a set of constraints $c$ that are of the form of a scope and relation, given by a subset of $X$ and a predicate $f$, respectively.
+\[
+C := \{c_1,\ldots,c_n\}
+\]
+\[
+c_i = \langle s \subset X,f:x_i \mapsto\{ \top,\bot \}\rangle\
+\]
+
+CSPs are considered solved when there exists an assignment of all variables that satisfies all constraints. Some basic examples of CSPs are Sudoku, and 3 SAT, both have an easily justified representation of variables, domains, and constraints. However many other problems can be coerced into CSPs since there is no principled restriction to the domain, variables, or constraints.
+
+\medskip
+Epistemology and the philosophy of physics, in this context, are vitally important to developing an intuition of AI and the limitations it must face. This is due to the structural similarities of human processes and AI models. Epistemology is the study of human knowledge /citation/, and since is the study of AI knowledge. In this context, this argument applies to any context that an analogy is made from the limitations of human behaviour that are strictly dependent on their structure, can be applied to AI of training, prediction, and generation. The philosophy of physics enables the evaluation of the physical limitations of AI models to support analogous arguments to structural limitations of AI.
+
+\medskip
+
+
+
+\newpage
+
+\section{Literature Review}\
+
+\bigskip
+Turing describes the most general computer when he introduces the $a$ machine \cite{turing1936computable} it utilises a tape as a way to maintain its memory, which in this case describes the computational systems ability to store information. In other computational systems, memory might describe several structures varying in complexity, but that can all be understood to refer to an information store. Turing machines utilise very simple instructions that can be used to form algorithms, which can describe any kind of operation that a computer is capable of. Algorithms are in this case manipulators of information \cite{russell1995modern}, turning it from one form into another. There are many different ways of formalising this kind of information processing, the major being predicate logic, equivalent to lambda calculus, and an extension of predicate logic, constraint satisfiability problems, where predicates are given globalised variables informing  \cite{russell1995modern}. CSPs in this way, can represent any computational system, they are also vital to describing algorithmic intelligence. These systems have a mathematical formalisation as a triple of Variables, Domains, and Constraints.
+
+
+
+They are able to easily represent many kinds of real world problems in fields such as logistics, and planning in ways that computers can attempt to solve \cite{russell1995modern}. CSPs have been studied for properties of tractability, and satisfiability, since knowing this kind of information can support heuristics when solving these industrial problems. These limitations are also important however, when discussing other applications of CSPs. In AI, CSPs are able to describe many kinds of structures, and therefore, can infer limitations of AI models.
+
+\newpage
+In many works that influenced many popular interpretations of AI, writers such as Isaac Asimov \cite{Asimov1950} discussed the goals that many hold for AI models. That being that AI are mimicking the behaviour of humans, this end point discussed in many of his works provides a perspective on AI that has inherent flaws, these thought experiments provide a basis for understanding both the AI of today, but a possible AI of the future. Humans have several flaws of logic and reasoning that may not be able to be overcome when we aim to create models that mimic ourselves. The Chinese-room experiment \cite{obermeier1983wittgenstein} is another example of a thought experiment which asks us to question the ability of computers to truly understand. The ability for a machine to give the right output gives no indication of whether the machine understands the input. This has many different interpretations, some refer to the lack of true artificial intelligence, while others refer to limitations of the input. The latter applies most in this circumstance, with people being the inspiration for AI architecture, they will be forever limited by the behaviours of people. 
+
+\bigskip
+
+The current theories of knowledge in people originate from the debate of empiricists and rationalists \cite{sep-rationalism-empiricism}. These two schools of thought are two separate schools of thought that are opposed to each other. The difference between preordained knowledge that is discovered and empirical knowledge that is gained from experience. Although both of these interpretations have implications for limits of human knowledge. The empiricists require that every thought is testable, and grounded in reality. The rationalists require that all knowledge is already predisposed, and that we are unlocking our access to it. Regardless of your mechanism for knowledge acquisition there is information that is unattainable. As shown in thought experiments, such as the Newcomb's problem \cite{nozick1969newcomb}, future events are an example of the unknowable, since the very act of knowing as a part of the universe can change those future events.
+
+\newpage
+
+\section{The Model}\
+
+\noindent
+The model I have constructed so-far contains three axioms: 
+
+\begin{enumerate}
+    \item Generation from information is impossible if there exists no relationship between the learned data and generated data.
+    \item Generation from information is impossible if there exists no algorithm to represent the relationship that can be computed in finite time and space.
+    \item Generation from information is equivalent, while the information is the same
+    \item 
+\end{enumerate}
+
+\noindent
+This implies three principles,
+\begin{enumerate}[label=\roman*.]
+
+    \item Dependency.
+        \subitem From (1). Generation is dependent on the relationships, not on the objects.
+        
+    \item Generation Uncertainty.
+        \subitem From (2). The more accurate a prediction, the less computable it becomes.
+    
+    \item Similarity.
+        \subitem From (3). Any relationship can be modelled with an equivalent set of relations.
+\end{enumerate}
+
+\noindent
+These principles can be used to inform predictions. That is,
+\begin{enumerate}
+    \item For all AI models, there exists an equivalent Constraint Satisfaction Problem.
+    
+    \item For all AI models, the relationship between generation and information is proportionately tractable to the similarity between the information and the generation.
+    
+    \item For all AI models, there exists no equivalent process to generating the future to absolute detail at the current speed of time that is tractable.
+    
+
+    
+    
+
+\end{enumerate}
+
+\newpage
+\bibliographystyle{unsrt}%Used BibTeX style is unsrt
+\bibliography{Bibliography}
+\end{document}
+
