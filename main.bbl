@@ -1,14 +1,86 @@
-\begin{thebibliography}{1}
+\begin{thebibliography}{10}
+
+\bibitem{bommasani2021foundation}
+Rishi Bommasani, Drew~A. Hudson, Ehsan Adeli, Russ Altman, Simran Arora, Sydney
+  von Arx, Michael~S. Bernstein, Jeannette Bohg, Antoine Bosselut, Emma
+  Brunskill, et~al.
+\newblock On the opportunities and risks of foundation models.
+\newblock {\em arXiv preprint arXiv:2108.07258}, 2021.
+
+\bibitem{lecun2015deep}
+Yann LeCun, Yoshua Bengio, and Geoffrey Hinton.
+\newblock Deep learning.
+\newblock {\em Nature}, 521(7553):436--444, 2015.
+
+\bibitem{kaplan2020scaling}
+Jared Kaplan, Sam McCandlish, Tom Henighan, Tom~B. Brown, Benjamin Chess, Rewon
+  Child, Scott Gray, Alec Radford, Jeffrey Wu, and Dario Amodei.
+\newblock Scaling laws for neural language models.
+\newblock {\em arXiv preprint arXiv:2001.08361}, 2020.
+
+\bibitem{hoffmann2022training}
+Jordan Hoffmann, Sebastian Borgeaud, Arthur Mensch, Elena Buchatskaya, Trevor
+  Cai, Eliza Rutherford, Diego de~Las~Casas, Lisa~Anne Hendricks, Johannes
+  Welbl, Aidan Clark, et~al.
+\newblock Training compute-optimal large language models.
+\newblock {\em arXiv preprint arXiv:2203.15556}, 2022.
+
+\bibitem{sep-epistemology}
+Matthias Steup, Ram Neta, and John Turri.
+\newblock {Epistemology}.
+\newblock In Edward~N. Zalta and Uri Nodelman, editors, {\em The {Stanford}
+  Encyclopedia of Philosophy}. Metaphysics Research Lab, Stanford University,
+  {F}all 2024 edition, 2024.
+
+\bibitem{carabantes2020blackbox}
+Manuel Carabantes.
+\newblock Black-box artificial intelligence: An epistemological and critical
+  analysis.
+\newblock {\em AI \& Society}, 35(4):943--952, 2020.
+
+\bibitem{funer2022accuracy}
+Florian Funer.
+\newblock Accuracy and interpretability: Struggling with the epistemic
+  foundations of machine learning-generated medical information.
+\newblock {\em Philosophy \& Technology}, 35(2):1--28, 2022.
+
+\bibitem{mackworth1977consistency}
+Alan~K. Mackworth.
+\newblock Consistency in networks of relations.
+\newblock {\em Artificial Intelligence}, 8(1):99--118, 1977.
+
+\bibitem{dechter1992backtracking}
+Rina Dechter.
+\newblock Backtracking algorithms for constraint satisfaction problems: A
+  survey.
+\newblock {\em Computational Intelligence}, 4(3):273--289, 1988.
+
+\bibitem{shannon1948mathematical}
+Claude~E. Shannon.
+\newblock A mathematical theory of communication.
+\newblock {\em Bell System Technical Journal}, 27(3):379--423, 1948.
+
+\bibitem{tishby2015deep}
+Naftali Tishby and Noga Zaslavsky.
+\newblock Deep learning and the information bottleneck principle.
+\newblock {\em 2015 IEEE Information Theory Workshop (ITW)}, pages 1--5, 2015.
+
+\bibitem{shwartz2017opening}
+Ravid Shwartz-Ziv and Naftali Tishby.
+\newblock Opening the black box of deep neural networks via information.
+\newblock {\em arXiv preprint arXiv:1703.00810}, 2017.
 
 \bibitem{turing1936computable}
 Alan~Mathison Turing et~al.
-\newblock On computable numbers, with an application to the entscheidungsproblem.
+\newblock On computable numbers, with an application to the
+  entscheidungsproblem.
 \newblock {\em J. of Math}, 58(345-363):5, 1936.
 
 \bibitem{russell1995modern}
 Stuart Russell, Peter Norvig, and Artificial Intelligence.
 \newblock A modern approach.
-\newblock {\em Artificial Intelligence. Prentice-Hall, Egnlewood Cliffs}, 25(27), 1995.
+\newblock {\em Artificial Intelligence. Prentice-Hall, Egnlewood Cliffs},
+  25(27), 1995.
 
 \bibitem{Asimov1950}
 Isaac Asimov.
@@ -18,17 +90,21 @@ Isaac Asimov.
 
 \bibitem{obermeier1983wittgenstein}
 Klaus~K Obermeier.
-\newblock Wittgenstein on language and artificial intelligence: The chinese-room thought experiment revisited.
+\newblock Wittgenstein on language and artificial intelligence: The
+  chinese-room thought experiment revisited.
 \newblock {\em Synthese}, pages 339--349, 1983.
 
 \bibitem{sep-rationalism-empiricism}
 Peter Markie and M.~Folescu.
 \newblock {Rationalism vs. Empiricism}.
-\newblock In Edward~N. Zalta and Uri Nodelman, editors, {\em The {Stanford} Encyclopedia of Philosophy}. Metaphysics Research Lab, Stanford University, {S}pring 2023 edition, 2023.
+\newblock In Edward~N. Zalta and Uri Nodelman, editors, {\em The {Stanford}
+  Encyclopedia of Philosophy}. Metaphysics Research Lab, Stanford University,
+  {S}pring 2023 edition, 2023.
 
 \bibitem{nozick1969newcomb}
 Robert Nozick.
 \newblock Newcomb’s problem and two principles of choice.
-\newblock In {\em Essays in honor of carl g. hempel: A tribute on the occasion of his sixty-fifth birthday}, pages 114--146. Springer, 1969.
+\newblock In {\em Essays in honor of carl g. hempel: A tribute on the occasion
+  of his sixty-fifth birthday}, pages 114--146. Springer, 1969.
 
 \end{thebibliography}
