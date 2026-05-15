@@ -3,16 +3,29 @@
 \usepackage{enumitem}
 \usepackage{microtype}
 \usepackage{comment}
+\usepackage{indentfirst}
+\usepackage{amsthm}
+\usepackage{amsmath}
+\usepackage{amssymb}
 
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{corollary}[theorem]{Corollary}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}[section]
 \title{Capstone}
 \author{Huxley Lewis}
 \date{November 2025}
 \begin{document}
 \maketitle
 
-How constraint satisfiability problems and information theory, along with, philosophies of empiricism and determinism implicate the future of artificially intelligent structures.
+ How can the \textbf{meaningful information limits} of generalized \textbf{AI} structures be inferred through the limits of \textbf{epistemology, constraint satisfaction, and information theory?}
 
 \section{Abstract}
+
+AI is an important part of the modern world, and as architectures are changing, and models are becoming increasingly larger, more general, and intelligent, it becomes important to have an intuitive model for the kinds of problems that AI can solve. This paper aims to provide such a framework for dismissing problems as impossible to solve with AI systems that is both workable and intuitive, incorporating a philosophic perspective, as well as a mathematical rigour.
 
 \section{Introduction}
 \begin{comment}
@@ -34,9 +47,9 @@ INTRO
 // Give my definition for AI - Structure = Data → Processing → Generation.
 LIT REVIEW
 // For each of (AI, CSPs, determinism, empiricism) ... 
-// // What are the different definitions?
+// // What are the different definitions of important terms?
 // // How do the definitions compare?
-// // // Similarity / difference
+// // // Similarities / differences
 
 METHOD 
 // Draw from the definitions in the LIT REVIEW and the INTRO
@@ -52,130 +65,133 @@ CONCLUSION
 \end{comment}
 
 \medskip
-Artificial Intelligence, or AI, has grown significantly over the last decade with the rise of large language models and other foundation models \cite{bommasani2021foundation}. These models are examples of neural networks, which learn from data rather than being programmed with exact task-specific behaviours \cite{lecun2015deep}. Scaling studies of language models suggest that performance improves with additional parameters, data, and compute, while also making the cost of training and inference a central practical constraint \cite{kaplan2020scaling,hoffmann2022training}. Although the exact internal mechanisms by which LLMs generalize across new tasks remain only partially understood \cite{bommasani2021foundation}, $<$their shared structure of data, processing, and generation can still be used to frame arguments about the behaviour and limits of AI systems.$>$ $<$This structural view of artificial intelligence motivates the use of constraint satisfiability problems, information theory, epistemology, and determinism when reasoning about the limitations of generalized AI models.$>$
+Artificial Intelligence, or AI, has grown significantly over the last decade with the rise of large language models and other foundation models \cite{bommasani2021foundation}. These models are examples of neural networks, which learn from data rather than being programmed with exact task-specific behaviours \cite{lecun2015deep}. Scaling studies of language models suggest that performance improves with additional parameters, data, and compute, while also making the cost of training and inference a central practical constraint \cite{kaplan2020scaling,hoffmann2022training}. Although the exact internal mechanisms by which LLMs generalize across new tasks remain only partially understood \cite{bommasani2021foundation}, their shared structure of data, processing, and generation can still be used to frame arguments about the behaviour and limits of AI systems. This structural view of artificial intelligence motivates the use of constraint satisfiability problems, information theory, epistemology, and determinism when reasoning about the meaningful information limitations of generalized AI models.
 \smallskip
 
-Epistemology is the study of human knowledge \cite{sep-epistemology}. It has also been used in recent work to analyse AI systems as black boxes and to reason about the limits of explanation, justification, and understanding in machine learning \cite{carabantes2020blackbox,funer2022accuracy}. $<$Because data is a fundamental element of AI systems, epistemic questions about what is known, how it is learned, and what remains inaccessible apply directly to AI.$>$ $<$The different methods by which an AI system acquires and represents data also shape its structure, including the contrast between symbolic and connectionist approaches.$>$ (citation)
+Epistemology is the study of human knowledge \cite{sep-epistemology}. It has also been used in recent work to analyse AI systems as black boxes and to reason about the limits of explanation, justification, and understanding in machine learning \cite{carabantes2020blackbox, funer2022accuracy}. Because data is a fundamental element of AI systems, epistemic questions about what is known, how it is learned, and what remains inaccessible apply directly to AI. The different methods by which an AI system acquires and represents data also shape its structure, including the contrast between symbolic and connectionist approaches. (citation)
 \smallskip
 
-Constraint Satisfiability Problems, or CSPs, are a general framework for representing problems in terms of variables, domains, and constraints \cite{mackworth1977consistency}. This abstraction makes CSPs useful for discussing classes of problems independently of the details of any particular solver \cite{dechter1992backtracking}. CSPs have long been used in symbolic AI to represent relational structure in domain-specific problems while supporting general solving procedures \cite{mackworth1977consistency,dechter1992backtracking}. $<$This style of representation supports mathematical arguments that may extend to AI systems when those systems can be modeled in CSP-like terms.$>$
+Constraint Satisfiability Problems, or CSPs, are a general framework for representing problems in terms of variables, domains, and constraints \cite{mackworth1977consistency}. This abstraction makes CSPs useful for discussing classes of problems independently of the details of any particular solver \cite{dechter1992backtracking}. CSPs have long been used in symbolic AI to represent relational structure in domain-specific problems while supporting general solving procedures \cite{mackworth1977consistency,dechter1992backtracking}. This style of representation supports mathematical arguments that may extend to AI systems when those systems can be modelled in CSP-like terms.
 \smallskip
 
 Information theory is a framework for quantifying information, communication, and uncertainty \cite{shannon1948mathematical}. In machine learning, information-theoretic methods have been used to study how representations preserve, compress, and transform information during learning \cite{tishby2015deep,shwartz2017opening}. Information theory therefore offers one way to analyse the internal behaviour of contemporary connectionist models \cite{shwartz2017opening}.
 \smallskip
-$<$Determinism is the view that events are fixed by prior conditions rather than arising independently.$>$ (citation) $<$Although this remains debated across philosophy and physics, it provides a framework for asking whether future states of a system are in principle knowable from present information.$>$ (citation)
+Determinism is the view that events are fixed by prior conditions rather than arising independently. (citation) Although this remains debated across philosophy and physics, it provides a framework for asking whether future states of a system are in principle knowable from present information. (citation)
 
-\begin{comment}
+\section{Background}
 
-
-
-CSPs can be formalized as a triple of variables, domains, and constraints, as follows:
-
-
-\medskip
-
+\subsection{Defining AI}
 
 \smallskip
-$S$ is a constraint system defined by three components:$X$,$D$,$C$.
+
+Some cite AI as being any algorithm that aims to replicate human's mental faculties, instead of their physical qualities. This definition, some say, (citation) is redundant since all algorithms are automating mental faculties of people. Other definitions aim to avoid redundancy by specifying how algorithms process data as prediction machines (citation). This provides a much better basis for understanding what AI is, some introductory courses to the field will describe AI as general function approximation algorithms (citation). This has been expanded in recent years as AI models have become successful in problems that were not previously understood as functions (citation), such as natural language processing. The ability to gain meaningful information moves beyond pure numeric function approximation has incurred the use of definitions of AGI, or artificial general intelligence, to differentiate simpler AI from more capable AI models. AGI can similarly be defined in many ways, but, as its name implies, is a generalization of AI, where all mental faculties of people are replicated, this was popularized as a concept by Alan Turing, as he describes the Turing test (citation), whereas a human interacts with an algorithm the human cannot differentiate if an output is the result of an algorithm or another human.
+
+These conflicting definitions are now being shaped by current use of AI as the public are maintaining relationships with the field. This motivates the analysis of these definitions for their applicability in supporting modern uses of AI. The aforementioned definition of AI as automation of mental faculties, in this context, gains meaning since it provides implied use cases for AI, as a tool to replace their mental faculties. The definition of AI as a prediction machine can be introduced to a member of the public to provide understanding of the mechanisms by which AI automates mental processes. The final definition of AI pertinent, here, is that of the general function aproximator, where it again implies a certain use case, that it be used to regress or approximate functions, without the condition of knowledge of the structure of the function.
+
+These standard definitions excel at providing intuitive understand for a lay person to understand what AI is, and how it can be used, but they fall short in the ability to capture the limitations of AI. This motivates the position here, that the definition for AI should be structural, instead of useful, and to provide an intuitive construction of this definition.
+
+\subsection{Epistemic Limitations}
+
+Knowledge has been defined as a justified true belief (JTB), although this has been debated by Gettier (citation), as it does not account for cases such as accidental knowledge. This process of knowledge acquisition has many perspectives. Two of these perspectives are that of the empiricists and rationalists. 
+Philosophers such as Hume, argue that knowledge is gained through experience, giving us more evidence, thus increasing the likelihood or probability that what we believe is true, justifying it based on inference from our ability to sense reality (citation).
+Descartes, alternatively, in his meditations on first philosophy, that the only knowledge that we can have is that which is infallible, constructing his method of doubting to conclude that his ability to doubt is the only infallibility. These can be understood as different premises of the JTB theory, where Descartes argues that justification and truth can only come through rationality, Hume argues that justification and truth come from our experience of reality. These perspectives ask "what can one know?" in the context of their given reality. In AI problems, the reality must be provided, 
+
+As shown in thought experiments such as Newcomb's problem \cite{nozick1969newcomb}, future events are often treated as examples of the unknowable.
+
+Knowledge, as defined here is not sufficient to describe the use case of AI models, since knowledge is specific to the agent that understands the knowledge. Let meaningful information, then, be defined as a valid collection or arrangement of signs that incur some meaning to a decoder. Where validity is defined as a constraint on the model, meaning is assumed to be captured in the signs of the domain\footnotemark, and signs are symbols that incur meaning beyond their literal shape (citation - semiotic theory).
+\footnotetext{In extensions of this theory, this assumption must be taken into account, that the problem might be solvable on some general AI model.}
+
+\subsection{Defining Terms}
+
+\begin{definition}[Constraint Satisfiability Problem]
+    A constraint satisfaction problem (CSP) is a triple
+    \[
+    S := \langle X,D,C \rangle,
+    \]
+    where:
+    \begin{itemize}
+        \item $X:=\{x_1,\ldots,x_n\}$ is a set of variables $x_i$.
+        \item $D:=\{D_1,\ldots,D_n\}$ assigns a domain $D_i$ to each variable $x_i$.
+        \item $C:=\{c_1,\ldots,c_m\}$ is a set of constraints $c_i$.
+            \subitem Each constraint $c_j\ \in C$ is a pair $c_j=\langle S_j,R_j\rangle$, where $S_j \subseteq X$ is the scope and $R_j$ is a set of valid tuples $R_j \subseteq \underset{x_i \in S_j}{\prod}D_i$.
+        \item  \(S:=\left\{\mathbf{x}\in \underset{\ell}{\prod} D_\ell:\forall c,\ \mathbf{x}_{S_c}\in R_c\right\}, |S|>0\) is the set of valid assignments $\mathbf{x}_k$.
+    \end{itemize}
+\end{definition}
+\begin{definition}[Admissible Pairs]
+    Let $D_{xy}$ denote the admissible pairs $(x,y)$ compatible with $S$.
+\end{definition}
+\begin{definition}[Probability]
+    Let $P_i(a)$ denote the probability $X_i = a$ or $p(X_i=a)$ and be defined as,
 \[
-  S := \langle X, D, C \rangle
-\]
-$X$ is the set of variables $x$ in the CSP.
-\[
-X := \{x_1,\ldots,x_n\}
-\]
-$D$ is a set of domains $d$, which define the set of possible values of each variable in $X$.
-\[
-D := \{d_1,\ldots,d_n\}
-\]
-\[
-d_i = \{v_0,\ldots,v_k\}
-\]
-$C$ is a set of constraints $c$ that are of the form of a scope and relation, given by a subset of $X$ and a predicate $f$, respectively.
-\[
-C := \{c_1,\ldots,c_n\}
-\]
-\[
-c_i = \langle s \subset X,f:x_i \mapsto\{ \top,\bot \}\rangle
-\]
+P_i(a)=\frac{|\{\mathbf{x} \in S: x_i\}|}{|S|},
+\] assuming a uniform distribution. \\
+    Let $P_{ij}(a,b)$ denote $p(X_i=a,X_j=b)$, and be defined as,
+    \[
+    P_{ij}(a,b)=\frac{\left|\left\{\mathbf{x}\in S:\ x_i=a,\ x_j=b\right\}\right|}{|S|}.\]
+    
+\end{definition}
+\begin{definition}[Surprisal]
+    The surprisal of an outcome $a$ of random variable $X$ is,
+    \[
+    I_i(a) := -\log_2\!\bigl(P_i(a)\bigr),
+    \]
+    where $p(x)$ denotes the probability of $a$.
+\end{definition}
+\begin{definition}[Entropy]
+    The entropy of random variable $X$ is,
+    \[
+    H(X_i) := -\sum_{a \in D_i} P_i(a)\log_2\!\bigl(P_i(a)\bigr).
+    \]
+    
+\end{definition}
 
-CSPs are considered solved when there exists an assignment of all variables that satisfies all constraints. Some basic examples of CSPs are Sudoku, and 3 SAT, both have an easily justified representation of variables, domains, and constraints. However, many other problems can be coerced into CSPs since there is no principled restriction to the domain, variables, or constraints.
+\section{The model of AI}
 
-\medskip
-\cite{turing1936computable}
-Epistemology and the philosophy of physics, in this context, are vitally important to developing an intuition of AI and the limitations it must face. This is due to the structural similarities of human processes and AI models. Epistemology is the study of human knowledge /citation/, and since is the study of AI knowledge. In this context, this argument applies to any context that an analogy is made from the limitations of human behaviour that are strictly dependent on their structure, can be applied to AI of training, prediction, and generation. The philosophy of physics enables the evaluation of the physical limitations of AI models to support analogous arguments to structural limitations of AI.
+\subsection{Constructing the model for AI}
 
-\medskip
-\end{comment}
+To justify the model of Input $\rightarrow$ Processing $\rightarrow$ Generation, the limitations established previously must be applied to each of these stages.
+\\
+The empirical and rationalist perspectives motivate this paper's definition of AI. 
 
-
-\newpage
-
-\section{Literature Review}
-
-\bigskip
-Turing describes the most general computer when he introduces the $a$ machine \cite{turing1936computable} it utilizes a tape as a way to maintain its memory, which in this case describes the computational system's ability to store information. $<$In other computational systems, memory might describe several structures varying in complexity, but that can all be understood to refer to an information store.$>$ (citation) $<$Turing machines utilize very simple instructions that can be used to form algorithms, which can describe any kind of operation that a computer is capable of.$>$ (citation) Algorithms are in this case manipulators of information \cite{russell1995modern}, turning it from one form into another. There are many ways of formalizing this kind of information processing, the major being predicate logic, equivalent to lambda calculus, and an extension of predicate logic, constraint satisfiability problems, where predicates are given globalized variables informing  \cite{russell1995modern}. $<$CSPs in this way can represent many computational problems and are important to describing algorithmic intelligence.$>$ (citation) $<$These systems have a mathematical formalization as a triple of Variables, Domains, and Constraints.$>$ (citation)
-
-
-
-They are able to easily represent many kinds of problems in fields such as logistics, and planning in ways that computers can attempt to solve \cite{russell1995modern}. $<$CSPs have been studied for properties of tractability and satisfiability, since knowing this kind of information can support heuristics when solving these industrial problems.$>$ (citation) $<$These limitations are also important when discussing other applications of CSPs.$>$ $<$In AI, CSPs are able to describe many kinds of structures, and therefore, can infer limitations of AI models.$>$
-
-\newpage
-In many works that influenced many popular interpretations of AI, writers such as Isaac Asimov \cite{Asimov1950} discussed the goals that many hold for AI models. $<$That AI should mimic the behaviour of humans is one influential perspective, but it also carries important conceptual flaws.$>$ $<$These thought experiments provide one basis for understanding both the AI of today and a possible AI of the future.$>$ $<$Humans have several flaws of logic and reasoning that may not be overcome when we aim to create models that mimic ourselves.$>$ (citation) The Chinese-room experiment \cite{obermeier1983wittgenstein} is another example of a thought experiment which asks us to question the ability of computers to truly understand. $<$The ability for a machine to give the right output gives no indication of whether the machine understands the input.$>$ (citation) $<$This has many interpretations, some referring to the lack of true artificial intelligence, while others refer to limitations of the input.$>$ (citation) $<$The latter applies most in this circumstance, with people being the inspiration for AI architecture, they will be forever limited by the behaviours of people.$>$
-
-\bigskip
-
-The current theories of knowledge in people originate from the debate of empiricists and rationalists \cite{sep-rationalism-empiricism}. $<$These are opposing schools of thought.$>$ (citation) $<$The difference between them is often framed as one between preordained knowledge that is discovered and empirical knowledge that is gained from experience.$>$ (citation) $<$Both of these interpretations have implications for limits of human knowledge.$>$ (citation) $<$Empiricists require that thought be testable and grounded in reality.$>$ (citation) $<$Rationalists hold that knowledge is in some sense already predisposed, and that we unlock access to it.$>$ (citation) $<$Regardless of the mechanism of knowledge acquisition, there is information that is unattainable.$>$ $<$As shown in thought experiments such as Newcomb's problem \cite{nozick1969newcomb}, future events are often treated as examples of the unknowable.$>$
-
-\newpage
-
-\section{The Model}
-
-\noindent
-$<$The model I have constructed so-far contains three axioms:$>$
-
+To apply this to AI, we must construct the context or "reality" of our AI. This motivates the idea that we can suffice this context by constructing a domain of both our inputs and our generation.
 \begin{enumerate}
-    \item $<$Generation from information is impossible if there exists no relationship between the learned data and generated data.$>$
-    \item $<$Generation from information is impossible if there exists no algorithm to represent the relationship that can be computed in finite time and space.$>$
-    \item $<$Generation from information is equivalent, while the information is the same.$>$
+    \item Generation from information is impossible if there exists no relationship between the learned data and generated data.
 \end{enumerate}
+\begin{proposition} Model claims
+    \begin{enumerate}
+        \item For all AI models, there exists an equivalent constraint satisfaction representation.
+        \item For all AI models, the relationship between generation and information is proportionately tractable to the similarity between the information and the generation.
+        \item For all AI models, there exists no equivalent process to generating the future to absolute detail at the current speed of time that is tractable.
+    \end{enumerate}
+\end{proposition}
+\begin{proposition}
+    Processing requires that a constraint from $x$ to $y$ exists.
+    For constraints between a tuple of variables $T$, a single equivalent constraint can be constructed of $T \cup U$ that is equivalent.
+    Over constrained, if there exists no generation, for any of the input's domain the problem is invalid.
+    Under constrained, if the entropy of the generation is not less than the entropy of the input, the problem is invalid
+\end{proposition}
 
-\noindent
-$<$This implies three principles,$>$
-\begin{enumerate}[label=\roman*.]
+\subsection{The mathematical model for AI}
 
-    \item $<$Dependency.$>$
-    \begin{itemize}[noitemsep]
-        \item $<$From (1). Generation is dependent on the relationships, not on the objects.$>$
-    \end{itemize}
-        
-    \item $<$Generation Uncertainty.$>$
-    \begin{itemize}[noitemsep]
-        \item $<$From (2). The more accurate a prediction, the less computable it becomes.$>$
-    \end{itemize}
-    
-    \item $<$Similarity.$>$
-    \begin{itemize}[noitemsep]
-        \item $<$From (3). Any relationship can be modelled with an equivalent set of relations.$>$
-    \end{itemize}
-\end{enumerate}
 
-\noindent
-$<$These principles can be used to inform predictions. That is,$>$
-\begin{enumerate}
-    \item $<$For all AI models, there exists an equivalent Constraint Satisfaction Problem.$>$
+\begin{proposition}
+    Over constrained:
+    $
+      D_y(x) = \varnothing.
+    $
+    Under constrained:
+    $
+      \lvert D_y(x) \rvert = \lvert D_y \rvert .
+    $
+    Valid constraint effect:
+    $
+      0 < \lvert D_y(x) \rvert < \lvert D_y \rvert .
+    $
     
-    \item $<$For all AI models, the relationship between generation and information is proportionately tractable to the similarity between the information and the generation.$>$
-    
-    \item $<$For all AI models, there exists no equivalent process to generating the future to absolute detail at the current speed of time that is tractable.$>$
-    
+\end{proposition}
 
-    
-    
-
-\end{enumerate}
-
+\section{Conclusion}
 \newpage
-\bibliographystyle{unsrt}%Used BibTeX style is unsrt
+\bibliographystyle{unsrt} %Used BibTeX style is unsrt
 \bibliography{Bibliography}
 \end{document}

@@ -2,3 +2,5 @@ CSPs
 LLMs
 connectionism
 connectionist
+aproximator
+iff
