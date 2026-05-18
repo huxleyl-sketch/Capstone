@@ -4,3 +4,4 @@ connectionism
 connectionist
 aproximator
 iff
+Gettier
