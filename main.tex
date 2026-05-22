@@ -1,4 +1,4 @@
-\documentclass{article}
+\documentclass[stu,12pt]{apa7}
 \usepackage{graphicx} % Required for inserting images
 \usepackage{enumitem}
 \usepackage{microtype}
@@ -20,37 +20,31 @@
 \newtheorem{definition}{Definition}[section]
 \newtheorem{case}{Case}[section]
 
-\title{Capstone}
+\title{The Meaningful Information Limits of Generalized AI Structures; Inferred Through the Epistemic Limitations, Constraint Satisfaction, and Information Theory.}
+\shorttitle{Meaningful Information Limits of AI}
 \author{Huxley Lewis}
-\date{November 2025}
+\affiliation{Think Global School}
+\course{Capstone}
+\professor{Sophie Yang}
+\duedate{November 2025}
 \begin{document}
 \maketitle
-
- How can the \textbf{meaningful information limits} of generalized \textbf{AI} structures be inferred through the limits of \textbf{epistemology, constraint satisfaction, and information theory?}
-
-\section{Abstract}
-
+\begin{abstract}
+    
 AI is an important part of the modern world, and as architectures are changing, and models are becoming increasingly larger, more general, and intelligent, it becomes important to have an intuitive model for the kinds of problems that AI can solve. This paper aims to provide such a framework for dismissing problems as impossible to solve with AI systems that is both workable and intuitive, incorporating a philosophic perspective, as well as a mathematical rigour.
+\end{abstract}
 
-\section{Introduction}
-
-\medskip
 Artificial Intelligence, or AI, has grown significantly over the last decade with the rise of large language models and other foundation models \cite{bommasani2021foundation}. These models are examples of neural networks, which learn from data rather than being programmed with exact task-specific behaviours \cite{lecun2015deep}. Scaling studies of language models suggest that performance improves with additional parameters, data, and compute, while also making the cost of training and inference a central practical constraint \cite{kaplan2020scaling,hoffmann2022training}. Although the exact internal mechanisms by which LLMs generalize across new tasks remain only partially understood \cite{bommasani2021foundation}, their shared structure of data, processing, and generation can still be used to frame arguments about the behaviour and limits of AI systems. This structural view of artificial intelligence motivates the use of constraint satisfiability problems, information theory, epistemology, and determinism when reasoning about the meaningful information limitations of generalized AI models.
-\smallskip
 
 Epistemology is the study of human knowledge \cite{sep-epistemology}. It has also been used in recent work to analyse AI systems as black boxes and to reason about the limits of explanation, justification, and understanding in machine learning \cite{carabantes2020blackbox, funer2022accuracy}. Because data is a fundamental element of AI systems, epistemic questions about what is known, how it is learned, and what remains inaccessible apply directly to AI. The different methods by which an AI system acquires and represents data also shape its structure, including the contrast between symbolic and connectionist approaches \cite{russell1995modern}.
-\smallskip
 
 Constraint Satisfiability Problems, or CSPs, are a general framework for representing problems in terms of variables, domains, and constraints \cite{mackworth1977consistency}. This abstraction makes CSPs useful for discussing classes of problems independently of the details of any particular solver \cite{dechter1992backtracking}. CSPs have long been used in symbolic AI to represent relational structure in domain-specific problems while supporting general solving procedures \cite{mackworth1977consistency,dechter1992backtracking}. This style of representation supports mathematical arguments that may extend to AI systems when those systems can be modelled in CSP-like terms.
-\smallskip
 
 Information theory is a framework for quantifying information, communication, and uncertainty \cite{shannon1948mathematical}. In machine learning, information-theoretic methods have been used to study how representations preserve, compress, and transform information during learning \cite{tishby2015deep,shwartz2017opening}. Information theory therefore offers one way to analyse the internal behaviour of contemporary connectionist models \cite{shwartz2017opening}.
 
 \section{Literature Review}
 
 \subsection{Defining AI}
-
-\smallskip
 
 Some cite AI as being any algorithm that aims to replicate human's mental faculties, instead of their physical qualities. This definition, some say, \cite{russell1995modern} is redundant since all algorithms are automating mental faculties of people. Other definitions aim to avoid redundancy by specifying how algorithms process data as prediction machines \cite{russell1995modern}. This provides a much better basis for understanding what AI is, some introductory courses to the field will describe AI as general function approximation algorithms \cite{lecun2015deep}. This has been expanded in recent years as AI models have become successful in problems that were not previously understood as functions \cite{bommasani2021foundation}, such as natural language processing. The ability to gain meaningful information moves beyond pure numeric function approximation has incurred the use of definitions of AGI, or artificial general intelligence, to differentiate simpler AI from more capable AI models. AGI can similarly be defined in many ways, but, as its name implies, is a generalization of AI, where all mental faculties of people are replicated, this was popularized as a concept by Alan Turing, as he describes the Turing test \cite{turing2016imitation,russell1995modern}, whereas a human interacts with an algorithm the human cannot differentiate if an output is the result of an algorithm or another human.
 
